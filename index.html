@@ -117,8 +117,6 @@
             <input type="text" id="message" placeholder="Type a message" maxlength="104729">
             <button id="send">Send</button>
             <button id="clear" onclick="clearMessages()">Clear</button>
-            <button id="share" onclick="shareLink()">Share</button>
-            <button onclick="openLink()">Make music</button>
         </div>
 
 
@@ -189,12 +187,6 @@
  function updateUsername() {
         const username = document.getElementById('username').value;
         localStorage.setItem('username', username);
-    }
-    
- function shareLink() {
-        const link = window.location.href;
-        navigator.clipboard.writeText(link);
-        alert('Link copied to clipboard');
     }
     
     function scrollBottom() {
